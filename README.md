@@ -1,2 +1,3 @@
-# GreedySnake
- JS web game
+# Greedy Snake
+
+A classic Greedy Snake game made using TypeScript
