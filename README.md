@@ -1,2 +1,2 @@
 # GreedySnake
-Game written by TypeSript
+TypeSript
