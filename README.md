@@ -1,2 +1,2 @@
 # GreedySnake
- JS web game
+Game written by TypeSript
