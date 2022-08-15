@@ -1,7 +1,12 @@
 * {
+  position: relative;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.project-link {
+  position: absolute;
+  right: 400px;
 }
 .rules {
   width: 500px;
