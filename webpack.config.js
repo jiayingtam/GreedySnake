@@ -12,13 +12,13 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 // 使用 webpack 对 ts 文件进行打包编译的相关配置
 // webpack中所有配置项都应该写到 module.exports 中
 module.exports = {
-  mode:"development",
+  mode: 'development',
   // 指定入口文件
   entry: './src/index.ts',
   // 指定打包文件所在目录(文件出口)
   output: {
     // 指定打包文件的目录
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public'),
     // 打包后的JS的文件名
     filename: 'bundle.js',
     // environment: {
