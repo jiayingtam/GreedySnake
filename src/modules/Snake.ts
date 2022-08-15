@@ -40,7 +40,7 @@ class Snake {
 		// 校验newX的范围是否合法, 符合才可以修改，否则就是蛇撞墙了
 		if (newX < 0 || newX > 290){
 			// 蛇撞墙 游戏结束
-			throw new Error('蛇撞墙了')
+			throw new Error('🐍 hitted the wall! GAME OVER!!!!!')
 		}
 
 		// 禁止水平方向上掉头
@@ -139,7 +139,7 @@ class Snake {
 			// let body = this.body[i] as HTMLElement
 			if(this.snakeX === X  && this.snakeY === Y){
 				// 相撞了，通知GameControl游戏结束
-				throw new Error('蛇自撞！GAME OVER!')
+				throw new Error('🐍 hitted itself! GAME OVER!!!!!')
 			}
 		}
 	}
