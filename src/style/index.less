@@ -1,0 +1,66 @@
+// 设置变量
+@bg-color:pink;
+
+// 清除默认样式
+*{
+	margin: 0;
+	padding: 0;
+	// 改变盒模型的计算方式（盒子大小包含border padding margin）
+	box-sizing: border-box;
+}
+// 设置游戏容器样式
+.main {
+	width: 360px;
+	height: 420px;
+	background-color:@bg-color;
+	margin: 100px auto;
+	border: 10px solid black;
+	border-radius: 8%;
+	// 游戏舞台
+ 	.stage {
+		position: relative;
+		width: 304px;
+		height: 304px;
+		border: 2px solid black;
+		margin: 20px auto;
+		// 设置蛇
+		#snake>div{
+			width: 10px;
+			height: 10px;
+			background-color: #000;
+			// 给每块蛇的身体设置边框，与背景色一致，就能显示出其一段一段的
+			border: 1px solid pink;
+			// 由于蛇需要位置移动，因此开启绝对定位(子绝父相)
+			position: absolute;
+		};
+		// 设置食物
+		.food{
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			// border: 1px solid black;
+			left: 40px;
+			top: 100px;
+			display: flex;
+			// 换行排列
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-content: space-between;
+			// 其内的4个小div应该 2*2 排列
+			&>div{
+			float: left;
+			width: 4px;
+			height: 4px;
+			background-color: black;
+			// 45度旋转
+			transform: rotate(45deg);
+		}}
+	}
+	.score{
+		display: flex;
+		justify-content: space-evenly;
+		font-family: 'Courier New', Courier, monospace;
+		font-weight: 700;
+		font-size: 18px;
+	}
+}

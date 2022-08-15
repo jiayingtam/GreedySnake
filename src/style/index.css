@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 360px;
+  height: 420px;
+  background-color: pink;
+  margin: 100px auto;
+  border: 10px solid black;
+  border-radius: 8%;
+}
+.main .stage {
+  position: relative;
+  width: 304px;
+  height: 304px;
+  border: 2px solid black;
+  margin: 20px auto;
+}
+.main .stage #snake > div {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border: 1px solid pink;
+  position: absolute;
+}
+.main .stage .food {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 40px;
+  top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.main .stage .food > div {
+  float: left;
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+.main .score {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: 18px;
+}
