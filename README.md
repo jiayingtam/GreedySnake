@@ -1,4 +1,3 @@
 # Greedy Snake
 
-## About 
-Classic Greedy Snake game made using TypeScript
+A classic Greedy Snake game made using TypeScript
