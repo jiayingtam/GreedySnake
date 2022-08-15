@@ -19,7 +19,7 @@ class GameControl {
     // 生成实例
     this.snake = new Snake();
     this.food = new Food();
-    this.scorePanel = new ScorePanel(10, 3);
+    this.scorePanel = new ScorePanel(10, 2);
     // 实例创建后，游戏立刻开始
     // this.init()
   }
